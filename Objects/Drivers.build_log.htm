@@ -1,0 +1,448 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Jamse Smith, Student, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.34.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.163.9.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+C:\STM32\Drivers\Drivers.uvprojx
+Project File Date:  11/07/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+compiling util.c...
+compiling stm_drivers.c...
+lcd.c(11): warning: In file included from...
+./lcd.h(15): warning: In file included from...
+./util.h(15): warning: redefinition of typedef 'uint32_t' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned int uint32_t;
+                     ^
+./stm_drivers.h(15): note: previous definition is here
+typedef unsigned int uint32_t;
+                     ^
+lcd.c(11): warning: In file included from...
+./lcd.h(15): warning: In file included from...
+./util.h(16): warning: redefinition of typedef 'uint16_t' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned short int uint16_t;
+                           ^
+./stm_drivers.h(16): note: previous definition is here
+typedef unsigned short int uint16_t;
+                           ^
+lcd.c(11): warning: In file included from...
+./lcd.h(15): warning: In file included from...
+./util.h(17): warning: redefinition of typedef 'uint8_t' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char uint8_t;
+                      ^
+./stm_drivers.h(17): note: previous definition is here
+typedef unsigned char uint8_t;
+                      ^
+3 warnings generated.
+compiling lcd.c...
+input_pad.c(12): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(15): warning: In file included from...
+./util.h(15): warning: redefinition of typedef 'uint32_t' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned int uint32_t;
+                     ^
+./stm_drivers.h(15): note: previous definition is here
+typedef unsigned int uint32_t;
+                     ^
+input_pad.c(12): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(15): warning: In file included from...
+./util.h(16): warning: redefinition of typedef 'uint16_t' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned short int uint16_t;
+                           ^
+./stm_drivers.h(16): note: previous definition is here
+typedef unsigned short int uint16_t;
+                           ^
+input_pad.c(12): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(15): warning: In file included from...
+./util.h(17): warning: redefinition of typedef 'uint8_t' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char uint8_t;
+                      ^
+./stm_drivers.h(17): note: previous definition is here
+typedef unsigned char uint8_t;
+                      ^
+3 warnings generated.
+compiling input_pad.c...
+tetris.c(11): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(15): warning: In file included from...
+./util.h(15): warning: redefinition of typedef 'uint32_t' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned int uint32_t;
+                     ^
+./stm_drivers.h(15): note: previous definition is here
+typedef unsigned int uint32_t;
+                     ^
+tetris.c(11): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(15): warning: In file included from...
+./util.h(16): warning: redefinition of typedef 'uint16_t' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned short int uint16_t;
+                           ^
+./stm_drivers.h(16): note: previous definition is here
+typedef unsigned short int uint16_t;
+                           ^
+tetris.c(11): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(15): warning: In file included from...
+./util.h(17): warning: redefinition of typedef 'uint8_t' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char uint8_t;
+                      ^
+./stm_drivers.h(17): note: previous definition is here
+typedef unsigned char uint8_t;
+                      ^
+3 warnings generated.
+compiling tetris.c...
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(156): warning: 'ADC1_BASE' macro redefined [-Wmacro-redefined]
+#define ADC1_BASE (APB2_BASE + 0x2400)
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1327): note: previous definition is here
+#define ADC1_BASE             (APB2PERIPH_BASE + 0x2400)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(157): warning: 'ADC2_BASE' macro redefined [-Wmacro-redefined]
+#define ADC2_BASE (APB2_BASE + 0x2800)
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1328): note: previous definition is here
+#define ADC2_BASE             (APB2PERIPH_BASE + 0x2800)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(159): warning: 'GPIOA' macro redefined [-Wmacro-redefined]
+#define GPIOA ((GPIO_generic *) PORTA_BASE)
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1413): note: previous definition is here
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(160): warning: 'GPIOB' macro redefined [-Wmacro-redefined]
+#define GPIOB ((GPIO_generic *) PORTB_BASE)
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1414): note: previous definition is here
+#define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(161): warning: 'GPIOC' macro redefined [-Wmacro-redefined]
+#define GPIOC ((GPIO_generic *) PORTC_BASE)
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1415): note: previous definition is here
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(162): warning: 'GPIOD' macro redefined [-Wmacro-redefined]
+#define GPIOD ((GPIO_generic *) PORTD_BASE)
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1416): note: previous definition is here
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(163): warning: 'GPIOE' macro redefined [-Wmacro-redefined]
+#define GPIOE ((GPIO_generic *) PORTE_BASE)
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1417): note: previous definition is here
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(164): warning: 'GPIOF' macro redefined [-Wmacro-redefined]
+#define GPIOF ((GPIO_generic *) PORTF_BASE)
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1418): note: previous definition is here
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(165): warning: 'GPIOG' macro redefined [-Wmacro-redefined]
+#define GPIOG ((GPIO_generic *) PORTG_BASE)
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1419): note: previous definition is here
+#define GPIOG               ((GPIO_TypeDef *) GPIOG_BASE)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(230): warning: 'RCC_BASE' macro redefined [-Wmacro-redefined]
+#define RCC_BASE (AHB_BASE + 0x1000)
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1357): note: previous definition is here
+#define RCC_BASE              (AHBPERIPH_BASE + 0x1000)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(231): warning: 'RCC' macro redefined [-Wmacro-redefined]
+#define RCC ((RCC_Generic *) RCC_BASE)
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1448): note: previous definition is here
+#define RCC                 ((RCC_TypeDef *) RCC_BASE)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(233): warning: 'TIM2_BASE' macro redefined [-Wmacro-redefined]
+#define TIM2_BASE APB1_BASE 
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1291): note: previous definition is here
+#define TIM2_BASE             (APB1PERIPH_BASE + 0x0000)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(234): warning: 'TIM2' macro redefined [-Wmacro-redefined]
+#define TIM2 ((TIM_Generic *) TIM2_BASE)
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1385): note: previous definition is here
+#define TIM2                ((TIM_TypeDef *) TIM2_BASE)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(236): warning: 'TIM3_BASE' macro redefined [-Wmacro-redefined]
+#define TIM3_BASE (APB1_BASE + 0x0400)
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1292): note: previous definition is here
+#define TIM3_BASE             (APB1PERIPH_BASE + 0x0400)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(237): warning: 'TIM3' macro redefined [-Wmacro-redefined]
+#define TIM3 ((TIM_Generic *) TIM3_BASE)
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1386): note: previous definition is here
+#define TIM3                ((TIM_TypeDef *) TIM3_BASE)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(239): warning: 'TIM4_BASE' macro redefined [-Wmacro-redefined]
+#define TIM4_BASE (APB1_BASE + 0x0800)
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1293): note: previous definition is here
+#define TIM4_BASE             (APB1PERIPH_BASE + 0x0800)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(240): warning: 'TIM4' macro redefined [-Wmacro-redefined]
+#define TIM4 ((TIM_Generic *) TIM4_BASE)
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1387): note: previous definition is here
+#define TIM4                ((TIM_TypeDef *) TIM4_BASE)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(242): warning: 'TIM5_BASE' macro redefined [-Wmacro-redefined]
+#define TIM5_BASE (APB1_BASE + 0x0C00)
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1294): note: previous definition is here
+#define TIM5_BASE             (APB1PERIPH_BASE + 0x0C00)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(243): warning: 'TIM5' macro redefined [-Wmacro-redefined]
+#define TIM5 ((TIM_Generic *) TIM5_BASE)
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1388): note: previous definition is here
+#define TIM5                ((TIM_TypeDef *) TIM5_BASE)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(245): warning: 'TIM6_BASE' macro redefined [-Wmacro-redefined]
+#define TIM6_BASE (APB1_BASE + 0x1000)
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1295): note: previous definition is here
+#define TIM6_BASE             (APB1PERIPH_BASE + 0x1000)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(14): warning: In file included from...
+./stm_drivers.h(246): warning: 'TIM6' macro redefined [-Wmacro-redefined]
+#define TIM6 ((TIM_Generic *) TIM6_BASE)
+        ^
+C:/Users/Steve/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(1389): note: previous definition is here
+#define TIM6                ((TIM_TypeDef *) TIM6_BASE)
+        ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(15): warning: In file included from...
+./util.h(15): warning: redefinition of typedef 'uint32_t' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned int uint32_t;
+                     ^
+./stm_drivers.h(15): note: previous definition is here
+typedef unsigned int uint32_t;
+                     ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(15): warning: In file included from...
+./util.h(16): warning: redefinition of typedef 'uint16_t' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned short int uint16_t;
+                           ^
+./stm_drivers.h(16): note: previous definition is here
+typedef unsigned short int uint16_t;
+                           ^
+main.c(14): warning: In file included from...
+./tetris.h(13): warning: In file included from...
+./input_pad.h(14): warning: In file included from...
+./lcd.h(15): warning: In file included from...
+./util.h(17): warning: redefinition of typedef 'uint8_t' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char uint8_t;
+                      ^
+./stm_drivers.h(17): note: previous definition is here
+typedef unsigned char uint8_t;
+                      ^
+main.c(166): warning: passing 'char [5]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                lcd_write_string(150,50,"Okay", LCD_RED, 4);
+                                        ^~~~~~
+./lcd.h(179): note: passing argument to parameter 'string' here
+void lcd_write_string(uint16_t x, uint16_t y, uint8_t * string, uint16_t color, uint8_t block_size);
+                                                        ^
+main.c(167): warning: passing 'char [7]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                lcd_write_string(50,80,"Tetris", LCD_RED, 5);
+                                       ^~~~~~~~
+./lcd.h(179): note: passing argument to parameter 'string' here
+void lcd_write_string(uint16_t x, uint16_t y, uint8_t * string, uint16_t color, uint8_t block_size);
+                                                        ^
+main.c(168): warning: passing 'char [11]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                lcd_write_string(100,150,"Best Score", LCD_YELLOW, 1);
+                                         ^~~~~~~~~~~~
+./lcd.h(179): note: passing argument to parameter 'string' here
+void lcd_write_string(uint16_t x, uint16_t y, uint8_t * string, uint16_t color, uint8_t block_size);
+                                                        ^
+main.c(172): warning: passing 'char [17]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                lcd_write_string(100,200,"Press Any Button", LCD_YELLOW, 1);
+                                         ^~~~~~~~~~~~~~~~~~
+./lcd.h(179): note: passing argument to parameter 'string' here
+void lcd_write_string(uint16_t x, uint16_t y, uint8_t * string, uint16_t color, uint8_t block_size);
+                                                        ^
+main.c(173): warning: passing 'char [9]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                lcd_write_string(120,210,"To Start", LCD_YELLOW, 1);
+                                         ^~~~~~~~~~
+./lcd.h(179): note: passing argument to parameter 'string' here
+void lcd_write_string(uint16_t x, uint16_t y, uint8_t * string, uint16_t color, uint8_t block_size);
+                                                        ^
+main.c(230): warning: passing 'char [5]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                lcd_write_string(250,50,"Okay", LCD_RED, 2);
+                                        ^~~~~~
+./lcd.h(179): note: passing argument to parameter 'string' here
+void lcd_write_string(uint16_t x, uint16_t y, uint8_t * string, uint16_t color, uint8_t block_size);
+                                                        ^
+main.c(231): warning: passing 'char [7]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                lcd_write_string(150,80,"Tetris", LCD_RED, 3);
+                                        ^~~~~~~~
+./lcd.h(179): note: passing argument to parameter 'string' here
+void lcd_write_string(uint16_t x, uint16_t y, uint8_t * string, uint16_t color, uint8_t block_size);
+                                                        ^
+main.c(232): warning: passing 'char [14]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                lcd_write_string(150,120,"Current Score", LCD_YELLOW, 1);
+                                         ^~~~~~~~~~~~~~~
+./lcd.h(179): note: passing argument to parameter 'string' here
+void lcd_write_string(uint16_t x, uint16_t y, uint8_t * string, uint16_t color, uint8_t block_size);
+                                                        ^
+main.c(295): warning: non-void function does not return a value in all control paths [-Wreturn-type]
+}
+^
+33 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=8148 RO-data=1972 RW-data=168 ZI-data=1704  
+".\Objects\Drivers.axf" - 0 Error(s), 42 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F103VE
+  .\RTE\_Target_1
+  C:\Users\Steve\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\Steve\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Include file:  RTE_Driver\Config\RTE_Device.h
+      Source file:   Device\Source\ARM\startup_stm32f10x_hd.s
+      Source file:   Device\Source\system_stm32f10x.c
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
